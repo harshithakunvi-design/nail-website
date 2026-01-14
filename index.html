@@ -15,16 +15,16 @@
 
     <form id="bookingForm">
 
-        <label>Name:</label>
-        <input type="text" id="name" required>
+        <label>
+  <input type="checkbox" id="homeService">
+  Home Service (Rapido charges apply)
+</label>
 
-        <label>Date:</label>
-        <input type="date" id="date" required>
-
-        <label>Time:</label>
-        <input type="time" id="time" required>
-
-        <label>Service:</label>
+<label id="rapidoLabel" style="display:none;">
+  Rapido Fare (₹) <br>
+  <small>Enter fare shown in Rapido app</small>
+  <input type="number" id="rapidoCharge" placeholder="Enter Rapido fare">
+</label>
         <select id="service">
     <option value="1500">Extensions + Plain Gel Polish – ₹1500</option>
     <option value="2500">Only Hands (Gel Extensions + Art) – ₹2500</option>

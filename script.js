@@ -52,7 +52,7 @@ form.addEventListener("submit", function(e) {
     const serviceText = service.options[service.selectedIndex].text;
     const price = total.innerText;
 
-    const phoneNumber = "918919099361"; // change to your sister number
+    const phoneNumber = "919121809288"; // change to your sister number
 
     const msg =
 `Hello, I want to book a nail session 💅
