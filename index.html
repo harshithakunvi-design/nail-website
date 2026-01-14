@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Glam Nail Studio</title>
-    <link rel="stylesheet" href="style.css">
+<title>Nails Gallery</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+<h2>Nails Gallery 💅</h2>
+<p>Beauty at your fingertips</p>
 
-    <h1>Nails Gallery 💅</h1>
-    <p>Beauty at your fingertips</p>
+<form id="bookingForm">
 
-    <h2>Book Your Nail Session</h2>
+<label>Name</label>
+<input type="text" id="name" required>
 
-    <form id="bookingForm">
+<label>Date</label>
+<input type="date" id="date" required>
 
-        <label>
-  <input type="checkbox" id="homeService">
-  Home Service (Rapido charges apply)
-</label>
+<label>Time</label>
+<input type="time" id="time" required>
 
-<label id="rapidoLabel" style="display:none;">
-  Rapido Fare (₹) <br>
-  <small>Enter fare shown in Rapido app</small>
-  <input type="number" id="rapidoCharge" placeholder="Enter Rapido fare">
-</label>
-        <select id="service">
-    <option value="1500">Extensions + Plain Gel Polish – ₹1500</option>
-    <option value="2500">Only Hands (Gel Extensions + Art) – ₹2500</option>
-    <option value="4000">Bride Hands & Legs (Gel Extensions + Art) – ₹4000 </option>
-      </option value (Home service included)</option>
+<label>Service</label>
+<select id="service">
+<option value="1500">Extensions + Plain Gel Polish – ₹1500</option>
+<option value="2500">Only Hands (Gel Extensions + Art) – ₹2500</option>
+<option value="4000">Bride Hands & Legs – ₹4000</option>
 </select>
-        </select>
 
-        <label>
-<input type="checkbox" id="homeService">
-    Home Service (Rapido charges apply)
+<br><br>
+
+<label>
+<input type="checkbox" id="homeService"> Home Service (Rapido charges apply)
 </label>
 
-<label id="rapidoLabel" style="display:none;">
-    Rapido Charge (₹):
-    <input type="number" id="rapidoCharge" placeholder="Enter Rapido amount">
-</label>
-        </label>
+<div id="rapidoBox" style="display:none;">
+<label>Rapido Fare (₹)</label>
+<input type="number" id="rapidoCharge" placeholder="Enter Rapido fare">
+</div>
 
-        <h3>Total Price: ₹<span id="total"></span></h3>
+<h3>Total Price: ₹<span id="total">1500</span></h3>
 
-        <button type="submit">Confirm Booking</button>
+<button type="submit">Confirm Booking</button>
 
-    </form>
+</form>
 
-    <p id="message"></p>
-
+<p id="message"></p>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
